@@ -17,10 +17,7 @@
 
 ## What is Serta?
 
-Serta is a single-file Python CLI tool that spins up production-ready servers in seconds — no config sprawl, no boilerplate. Pick a server type, answer a few prompts, and you have a running Flask instance with an admin panel, file management, Cloudflare tunnel support, and bot hosting baked in.
-
-Everything lives in one file: `main.py`.
-
+Serta is a Python CLI tool that spins up production-ready servers in seconds . Pick a server type, answer a few prompts, and you have a running Flask instance with an admin panel, file management, Cloudflare tunnel support, and bot hosting baked in.
 ---
 
 ## Features
@@ -30,9 +27,6 @@ Host static sites or any folder as a live web server. Includes an admin panel, f
 
 ### 📦 File Storage Server
 A self-hosted file cabinet. Upload, download, browse, and manage files through a clean web UI. Optional login protection keeps your data private.
-
-### 🤖 Bot Hosting
-Run Discord, Telegram, Slack, or any generic Python bot as a managed subprocess. Upload your bot script via the admin panel, set env tokens, install pip dependencies, and control the bot's lifecycle (start / stop / restart) with live log streaming — all from the browser.
 
 ### ☁ Cloudflare Tunnels
 One-click public URLs via `cloudflared`. No port-forwarding, no router config. Works on any network.
@@ -106,17 +100,6 @@ Projects are stored under `~/.serta_projects/` and are fully self-contained:
 | `/upload` | Upload files |
 | `/download/<path>` | Download a file |
 | `/admin` | Admin panel |
-
-### Bot Hosting
-| Route | Description |
-|---|---|
-| `/admin` | Bot admin panel |
-| `/admin/bot/upload` | Upload bot script |
-| `/admin/bot/start` | Start bot subprocess |
-| `/admin/bot/stop` | Stop bot subprocess |
-| `/admin/bot/restart` | Restart bot subprocess |
-| `/admin/bot/logs` | Live log stream (polling) |
-
 ---
 
 ## Upload Modes
@@ -126,17 +109,6 @@ The admin upload widget supports three modes:
 - **Files** — pick one or more individual files
 - **Folder** — select an entire local folder; the directory tree is preserved server-side using `webkitRelativePath`
 - **ZIP** — upload a `.zip` archive; Serta extracts it, strips the top-level wrapper folder (like GitHub zips have), and preserves the internal structure
-
----
-
-## Bot Platforms
-
-| Platform | Library auto-installed | Required env var |
-|---|---|---|
-| Discord | `discord.py` | `DISCORD_TOKEN` |
-| Telegram | `python-telegram-bot` | `TELEGRAM_TOKEN` |
-| Slack | `slack-bolt` | `SLACK_BOT_TOKEN`, `SLACK_SIGNING_SECRET` |
-| Generic | _(your deps)_ | _(anything)_ |
 
 ---
 
