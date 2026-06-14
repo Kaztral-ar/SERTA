@@ -19,7 +19,7 @@ A lightweight server management and automation platform built with Python.
 
 | Feature | Description |
 |---|---|
-| 🚀 **Fast & Lightweight** | Flask-based core. Runs on a Termux session or a $5 VPS |
+| 🚀 **Fast & Lightweight** | Flask-based core. Runs on a Termux session|
 | 📁 **File Management** | Upload files, full folder trees, or ZIP archives with auto-extraction |
 | 🌐 **Web Hosting** | Serve static sites and web apps with Cloudflare tunnel integration |
 | 🤖 **Bot Hosting** | Run Telegram, Discord, Twitter/X bots with live log polling |
