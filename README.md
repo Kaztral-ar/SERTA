@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner.png" alt="Serta — Universal Server Builder" width="100%"/>
+  <img src="banner.jpg" alt="Serta — Universal Server Builder" width="100%"/>
 </div>
 
 <br/>
