@@ -16,7 +16,7 @@
 ---
 
 ## What is Serta?
-
+---
 Serta is a Python CLI tool that spins up production-ready servers in seconds . Pick a server type, answer a few prompts, and you have a running Flask instance with an admin panel, file management, Cloudflare tunnel support, and bot hosting baked in.
 ---
 
