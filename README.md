@@ -115,27 +115,125 @@ The admin upload widget supports three modes:
 ## Configuration Reference
 
 `usb_config.json` is written by Serta and lives inside each project directory. Key fields:
+SERTA
 
-| Field | Description |
-|---|---|
-| `name` | Project name |
-| `server_type` | `web` · `storage` · `bot` |
-| `port` | Server port |
-| `secret_key` | Flask secret key (auto-generated) |
-| `admin_password_hash` | `salt$pbkdf2_hash` |
-| `bot_type` | `discord` · `telegram` · `slack` · `generic` |
-| `bot_entry` | Path to the bot's entry script |
-| `bot_env` | Dict of env vars injected at bot startup |
-| `bot_pip_deps` | List of pip packages installed before first run |
+<p align="center">
+  <img src="banner.png" alt="SERTA Banner" width="100%">
+</p><p align="center">
+  <b>Simple • Efficient • Reliable • Terminal Automation</b>
+</p><p align="center">
+  A lightweight server management and automation platform built with Python.
+</p>---
+
+✨ Features
+
+- 🚀 Fast and lightweight
+- 📁 File & folder management
+- 🌐 Web hosting support
+- 🤖 Bot hosting capabilities
+- 💾 Storage management
+- 🔒 Secure authentication utilities
+- 📊 Logging and monitoring
+- 🐍 Python-based and easy to customize
+- 🌍 Cross-platform support
 
 ---
 
-## License
+📦 Installation
 
-MIT — do whatever you want with it.
+Android (Termux)
+
+pkg update -y
+pkg upgrade -y
+
+pkg install python git -y
+
+git clone https://github.com/Kaztral-ar/serta.git
+cd serta
+
+python -m venv venv
+source venv/bin/activate
+
+python main.py
 
 ---
 
-<div align="center">
-  <sub>Built by <a href="https://github.com/kaztral-ar">Kaztral</a> · Single file. Zero fuss.</sub>
-</div>
+🚀 Quick Start
+
+Run SERTA:
+
+python main.py
+
+---
+
+📁 Project Structure
+
+serta/
+├── main.py
+├── uploads/
+├── logs/
+├── static/
+├── templates/
+├── database/
+└── README.md
+
+---
+
+⚙️ Requirements
+
+- Python 3.10+
+- Git
+- Linux / Android (Termux) / Windows / macOS
+
+---
+
+🔧 Virtual Environment
+
+Create a virtual environment:
+
+python -m venv venv
+source venv/bin/activate
+
+Deactivate when finished:
+
+deactivate
+
+---
+
+🛠️ Development
+
+Clone the repository:
+
+git clone https://github.com/Kaztral-ar/serta.git
+cd serta
+
+---
+
+🤝 Contributing
+
+Contributions, bug reports, and feature requests are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+👨‍💻 Author
+
+Gokul AR
+
+GitHub: https://github.com/Kaztral-ar
+
+---
+
+<p align="center">
+  Made with ❤️ using Python
+</p>
